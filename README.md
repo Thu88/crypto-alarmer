@@ -9,6 +9,9 @@ A sound is then emitted and an alarm together with the trades plotted in charts 
 # How to use
 Git clone https://github.com/Thv88/crypto-alarmer.git
 
+Type:
+npm install
+
 Open a new terminal and type:
 python3 crypto_manager.py
 
