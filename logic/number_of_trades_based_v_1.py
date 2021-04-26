@@ -4,10 +4,12 @@ def coin_logic(trade_list):
     #There has to be at least 50 trades before coin logic is performed.
     if len(trade_list) < 50:
         return False
-
+    
+    """ In order to showcase the application the below has been commented out. This way alarms are sounded immediately instead waiting 10 minutes
     #There has to be trades from 10 minutes ago.
     if trade_list[-1].get_time_stamp() < (trade_list[0].get_time_stamp() + (1000 * 60 * 10)):
        return False
+    """
 
     #print(f'name: {trade_list[0].get_coin_name()} first trade: {trade_list[0].get_time_stamp()+ 1000 * 10} , last trade {trade_list[-1].get_time_stamp()}')
 
@@ -34,6 +36,6 @@ def coin_logic(trade_list):
 
     #Check if real number of trades is bigger than 5 mins ago + 100 
     for i in range(0, len(number_of_trades_in_last_10_to_5_min)):
-        if number_of_trades_in_last_5_min[i] > number_of_trades_in_last_10_to_5_min[i] + 100:
+        if number_of_trades_in_last_5_min[i] > number_of_trades_in_last_10_to_5_min[i] + 20 #20 is used instead of 100 to showcase the program faster. 
             return True
     
