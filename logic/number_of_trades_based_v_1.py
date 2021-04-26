@@ -36,6 +36,6 @@ def coin_logic(trade_list):
 
     #Check if real number of trades is bigger than 5 mins ago + 100 
     for i in range(0, len(number_of_trades_in_last_10_to_5_min)):
-        if number_of_trades_in_last_5_min[i] > number_of_trades_in_last_10_to_5_min[i] + 20 #20 is used instead of 100 to showcase the program faster. 
+        if number_of_trades_in_last_5_min[i] > number_of_trades_in_last_10_to_5_min[i] + 20: #20 is used instead of 100 to showcase the program faster. 
             return True
     
