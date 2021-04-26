@@ -1,0 +1,17 @@
+#volume-chart {
+    flex: 1;
+}
+#number-chart {
+    flex: 1;
+}
+#charts {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link {
+    margin-left: 15%;
+    margin-top: 30px;
+    
+}

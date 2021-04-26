@@ -1,0 +1,28 @@
+<form [formGroup]="datePickForm" (submit)="getTrades()">
+    <div class="form-element">
+        <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+    </div>
+    <div class="form-element">
+        <mat-form-field class="example-full-width">
+        <label for="appt">Select a start time:</label>
+        <input matInput type="time" id="start-time" name="time" formControlName="time">
+    </mat-form-field>
+    </div>
+    <div class="form-element">
+        <mat-form-field class="example-full-width">
+            <mat-label>Coin name</mat-label>
+            <input matInput placeholder="Ex. BTCIOTA" value="name" formControlName="coinName">
+        </mat-form-field>
+        
+    </div>
+    <div class="form-element">
+        <button mat-flat-button color="primary" type="submit">Get trades</button>
+
+    </div>
+</form>
