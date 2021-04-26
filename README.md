@@ -1,4 +1,4 @@
-# CoinInspector
+# Crypto alarmer
 This program connects to the binance api and recieves aggregated trades from all crypto currencies traded in bitcoin.
 If the real number of aggregated trades (buy trades - sell trades) exceeds a certain number, an alarm is sounded which the UI part of the program recieves.
 A sound is then emitted and an alarm together with the trades plotted in charts is presented.
